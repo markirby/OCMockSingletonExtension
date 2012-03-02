@@ -20,23 +20,24 @@ Copy the files inside OCMockSingletonExtension into your project, making sure yo
 
 * Import the header NSObject+SupersequentImplementation.h every time
 * Import the header needed for the singleton you want to mock
-
-	#import "NSObject+SupersequentImplementation.h"
-	#import "NSNotificationCenter+UnitTests.h"
-
 * Heres an example of how to use NSNotificationCenter+UnitTests
 
-	- (void)testNSNotificationCenter
-	{
-		//Call the createMockNotificationCenter or createNiceMockNotificationCenter to return a mock object whenever you call defaultCenter
-		id mockNotificationCenter = [NSNotificationCenter createMockNotificationCenter];
-		//Now [NSNotificationCenter defaultCenter] will return the mockNotificationCenter
-		STAssertEquals(mockNotificationCenter, [NSNotificationCenter defaultCenter], nil);
-		//Now call releaseInstance so [NSNotificationCenter defaultCenter] will return the original defaultCenter again
-		[NSNotificationCenter releaseInstance];
-    
-	}
+### Code sample
+
+    #import "NSObject+SupersequentImplementation.h"
+    #import "NSNotificationCenter+UnitTests.h"
+
+    - (void)testNSNotificationCenter
+    {
+    	//Call the createMockNotificationCenter or createNiceMockNotificationCenter to return a mock object whenever you call defaultCenter
+    	id mockNotificationCenter = [NSNotificationCenter createMockNotificationCenter];
+    	//Now [NSNotificationCenter defaultCenter] will return the mockNotificationCenter
+    	STAssertEquals(mockNotificationCenter, [NSNotificationCenter defaultCenter], nil);
+    	//Now call releaseInstance so [NSNotificationCenter defaultCenter] will return the original defaultCenter again
+    	[NSNotificationCenter releaseInstance];
+
+    }
 
 # Contribute
 
-Fork the project and add your own singletons to grow this.
+Fork the project and add your own singletons to help grow this.
