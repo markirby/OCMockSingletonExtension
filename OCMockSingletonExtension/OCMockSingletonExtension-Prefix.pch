@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'OCMockSingletonExtension' target in the 'OCMockSingletonExtension' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
