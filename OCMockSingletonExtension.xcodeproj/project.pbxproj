@@ -268,7 +268,7 @@
 		6F8B207E1500D1F500E5FE65 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 6F8B20811500D1F500E5FE65 /* Build configuration list for PBXProject "OCMockSingletonExtension" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -506,6 +506,7 @@
 				6F8B20AD1500D1F600E5FE65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F8B20AE1500D1F600E5FE65 /* Build configuration list for PBXNativeTarget "OCMockSingletonExtensionTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +515,7 @@
 				6F8B20B01500D1F600E5FE65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,12 +14,15 @@ static NSNotificationCenter *mockNotificationCenter = nil;
 
 @implementation NSNotificationCenter (UnitTests)
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 + (id)defaultCenter {
     if (mockNotificationCenter != nil) {
         return mockNotificationCenter;
     }
     return invokeSupersequentNoParameters();
 }
+#pragma clang diagnostic pop
 
 +(id)createMockNotificationCenter {
     mockNotificationCenter = [OCMockObject mockForClass:[NSNotificationCenter class]];

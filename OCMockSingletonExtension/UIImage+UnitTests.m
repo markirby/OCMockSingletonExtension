@@ -15,6 +15,8 @@ static UIImage *mockImage = nil;
 
 @implementation UIImage (UnitTests)
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 + (UIImage *)imageWithData:(NSData *)data
 {
     if (mockImage != nil) {
@@ -22,6 +24,7 @@ static UIImage *mockImage = nil;
     }
     return invokeSupersequent(data);
 }
+#pragma clang diagnostic pop
 
 +(id)createMockImage {
     mockImage = [OCMockObject mockForClass:[UIImage class]];
