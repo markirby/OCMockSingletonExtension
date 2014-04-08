@@ -34,6 +34,9 @@
 		6F8B20D51500D51100E5FE65 /* OCMockRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8B20CE1500D51100E5FE65 /* OCMockRecorder.h */; };
 		6F8B20D61500D51100E5FE65 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8B20CF1500D51100E5FE65 /* libOCMock.a */; };
 		6F8B20D71500D51100E5FE65 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8B20CF1500D51100E5FE65 /* libOCMock.a */; };
+		DA8E090C18F4075300E159F3 /* NSUserDefaults+UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC05C118F4045C008AFBFE /* NSUserDefaults+UnitTests.m */; };
+		DADC05C218F4045C008AFBFE /* NSUserDefaults+UnitTests.h in Headers */ = {isa = PBXBuildFile; fileRef = DADC05C018F4045C008AFBFE /* NSUserDefaults+UnitTests.h */; };
+		DADC05C318F4045C008AFBFE /* NSUserDefaults+UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC05C118F4045C008AFBFE /* NSUserDefaults+UnitTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,8 @@
 		6F8B20CD1500D51100E5FE65 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		6F8B20CE1500D51100E5FE65 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		6F8B20CF1500D51100E5FE65 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		DADC05C018F4045C008AFBFE /* NSUserDefaults+UnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+UnitTests.h"; sourceTree = "<group>"; };
+		DADC05C118F4045C008AFBFE /* NSUserDefaults+UnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+UnitTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +141,8 @@
 				6F8B20B71500D3C100E5FE65 /* NSDate+UnitTests.m */,
 				6F8B20B81500D3C100E5FE65 /* NSNotificationCenter+UnitTests.h */,
 				6F8B20B91500D3C100E5FE65 /* NSNotificationCenter+UnitTests.m */,
+				DADC05C018F4045C008AFBFE /* NSUserDefaults+UnitTests.h */,
+				DADC05C118F4045C008AFBFE /* NSUserDefaults+UnitTests.m */,
 				6F8B20BA1500D3C100E5FE65 /* UIImage+UnitTests.h */,
 				6F8B20BB1500D3C100E5FE65 /* UIImage+UnitTests.m */,
 				6F8B20B11500D28C00E5FE65 /* NSObject+SupersequentImplementation.h */,
@@ -218,6 +225,7 @@
 				6F8B20D11500D51100E5FE65 /* OCMArg.h in Headers */,
 				6F8B20D21500D51100E5FE65 /* OCMConstraint.h in Headers */,
 				6F8B20D31500D51100E5FE65 /* OCMock.h in Headers */,
+				DADC05C218F4045C008AFBFE /* NSUserDefaults+UnitTests.h in Headers */,
 				6F8B20D41500D51100E5FE65 /* OCMockObject.h in Headers */,
 				6F8B20D51500D51100E5FE65 /* OCMockRecorder.h in Headers */,
 			);
@@ -322,6 +330,7 @@
 			files = (
 				6F8B20B41500D28C00E5FE65 /* NSObject+SupersequentImplementation.m in Sources */,
 				6F8B20BD1500D3C100E5FE65 /* NSDate+UnitTests.m in Sources */,
+				DADC05C318F4045C008AFBFE /* NSUserDefaults+UnitTests.m in Sources */,
 				6F8B20C01500D3C100E5FE65 /* NSNotificationCenter+UnitTests.m in Sources */,
 				6F8B20C31500D3C100E5FE65 /* UIImage+UnitTests.m in Sources */,
 			);
@@ -334,6 +343,7 @@
 				6F8B20A81500D1F600E5FE65 /* OCMockSingletonExtensionTests.m in Sources */,
 				6F8B20B51500D28C00E5FE65 /* NSObject+SupersequentImplementation.m in Sources */,
 				6F8B20BE1500D3C100E5FE65 /* NSDate+UnitTests.m in Sources */,
+				DA8E090C18F4075300E159F3 /* NSUserDefaults+UnitTests.m in Sources */,
 				6F8B20C11500D3C100E5FE65 /* NSNotificationCenter+UnitTests.m in Sources */,
 				6F8B20C41500D3C100E5FE65 /* UIImage+UnitTests.m in Sources */,
 			);
