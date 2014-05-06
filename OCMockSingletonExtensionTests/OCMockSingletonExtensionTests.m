@@ -12,6 +12,7 @@
 #import "NSDate+UnitTests.h"
 #import "NSNotificationCenter+UnitTests.h"
 #import "UIImage+UnitTests.h"
+#import "NSUserDefaults+UnitTests.h"
 
 @implementation OCMockSingletonExtensionTests
 
@@ -45,6 +46,15 @@
     [NSNotificationCenter releaseInstance];
     
     STAssertFalse(mockNotificationCenter == [NSNotificationCenter defaultCenter], nil);
+}
+
+- (void)testNSUserDefaults
+{
+    id mockUserDefaults = [NSUserDefaults createMockUserDefaults];
+    STAssertEquals(mockUserDefaults, [NSUserDefaults standardUserDefaults], nil);
+    [NSUserDefaults releaseInstance];
+
+    STAssertFalse(mockUserDefaults == [NSUserDefaults standardUserDefaults], nil);
 }
 
 - (void)testUIImage
